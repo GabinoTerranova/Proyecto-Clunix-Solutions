@@ -1,11 +1,12 @@
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #000; /* Fondo negro */
+    background-color: #000000; /* Fondo negro */
     color: #fff; /* Texto blanco */
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    text-align: center;
     min-height: 100vh;
 }
 
@@ -40,20 +41,22 @@ body {
 
 #root {
     flex: 1;
-    margin: 0 150px; /* espacio para los anuncios */
+    margin: 0 130px; /* espacio para los anuncios */
     display: flex;
     flex-direction: column;
 }
 
 header {
     background: #000; /* Fondo negro */
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     color: #fff; /* Texto blanco */
 }
 
 .navbar {
-    background-color: #111 !important; /* Fondo un poco más claro que el negro */
+    background-color: #1a2980 !important; 
+    border-radius: 15px; /* Agrega este línea */
+
 }
 
 .navbar-brand {
