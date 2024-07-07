@@ -60,6 +60,7 @@ header {
 }
 
 .navbar-brand {
+    padding-left: 5%;
     font-weight: bold;
     color: #fff !important; /* Texto blanco */
 }
