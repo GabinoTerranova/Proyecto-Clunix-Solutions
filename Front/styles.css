@@ -1,0 +1,166 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.ad {
+    background-color: #111; /* Fondo de anuncios un poco más claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#left-ad, #right-ad {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+#left-ad {
+    left: 0;
+}
+
+#right-ad {
+    right: 0;
+}
+
+#bottom-ad {
+    display: none;
+}
+
+#root {
+    flex: 1;
+    margin: 0 130px; /* espacio para los anuncios */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #000; /* Fondo negro */
+    padding: 30px;
+    text-align: center;
+    color: #fff; /* Texto blanco */
+}
+
+.navbar {
+    background-color: #1a2980 !important; 
+    border-radius: 15px; /* Agrega este línea */
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important; /* Texto blanco */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Texto blanco */
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007aff !important; /* Azul de acento */
+}
+
+main {
+    background-color: #000; /* Fondo negro */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+section {
+    background-color: #111; /* Fondo de secciones un poco más claro */
+    padding: 20px;
+    border: none; /* Sin borde */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
+}
+
+h2 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #333; /* Línea más clara */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    #root {
+        margin: 0; /* eliminar espacio para los anuncios en pantallas más pequeñas */
+    }
+
+    #left-ad, #right-ad {
+        display: none; /* ocultar anuncios en pantallas más pequeñas */
+    }
+
+    #bottom-ad {
+        display: flex; /* mostrar anuncio inferior en pantallas más pequeñas */
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.875rem;
+    }
+}
