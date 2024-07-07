@@ -1,0 +1,16 @@
+{
+  "name": "proyecto-clunix-solutions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss build Front/tailwind.css -o Front/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4",
+    "postcss": "^8.3.11",
+    "autoprefixer": "^10.3.7"
+  }
+}
